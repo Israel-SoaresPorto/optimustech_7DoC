@@ -70,3 +70,30 @@ body {
     text-decoration: none;
     border-radius: 10px;
 }
+
+.about {
+    padding: 96px 18%;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.about__subheading {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.about__title {
+    font-size: 3rem;
+    color: #101828;
+}
+
+.about__text {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
