@@ -2,7 +2,7 @@
 projeto do #7DaysOfCode da Alura
 
 - Dia 1: Criando cabeçalho da página
-- Dia 2:
+- Dia 2: Criando primeira seção
 - Dia 3:
 - Dia 4:
 - Dia 5:
