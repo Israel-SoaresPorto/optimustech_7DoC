@@ -16,40 +16,40 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.header {
+.navBar {
     padding: 1% 8%;
 }
 
-.header__container {
+.navBar__container {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
 }
 
-.header__logo {
+.navBar__logo {
     display: flex;
     align-items: center;
     gap: 5px;
     flex: 1;
 }
 
-.header__logo-text {
+.navBar__logo-text {
     font-size: 18px;
 }
 
-.header__navBar {
+.navBar__links {
     display: flex;
     align-items: center;
     gap: 30px;
     flex: 2;
 }
 
-.header__navBar__link {
+.navBar__links a {
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.header__actions {
+.navBar__actions {
     display: flex;
     align-items: center;
     flex: 1;
@@ -57,13 +57,13 @@ body {
     gap: 12px;
 }
 
-.header__actions__login {
+.navBar__actions__login {
     padding: 10px 18px;
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.header__actions__sign-in {
+.navBar__actions__sign-in {
     background-color: var(--primary-color);
     padding: 14px 20px;
     color: white;
