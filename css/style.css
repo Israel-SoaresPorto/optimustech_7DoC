@@ -130,3 +130,50 @@ body {
     color: var(--secondary-font-color);
     line-height: var(--standard-line-heigth);
 }
+
+.jobs {
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.talents {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.talents__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.talents__content__bagde {
+    background-color: #8e242415;
+    color: var(--primary-font-color);
+    padding: 4px 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.talents__content__title {
+    color: var(--fourth-font-color);
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.talents__content__text {
+    color: var(--secondary-font-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.talents__image {
+    width: 100%;
+}
