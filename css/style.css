@@ -177,3 +177,45 @@ body {
 .jobs__talents__image {
     width: 100%;
 }
+
+.jobs__board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.jobs__board__occupation-area {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.jobs__board__occupation-area__title {
+    color: var(--fourth-font-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.jobs__board__post {
+    padding: 24px;
+    border: 1px solid #eaecf0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.jobs__board__post__title {
+    color: var(--fourth-font-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.jobs__board__post__details {
+    color: var(--secondary-font-color);
+    display: flex;
+    gap: 24px;
+}
