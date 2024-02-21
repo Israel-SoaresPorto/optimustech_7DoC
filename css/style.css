@@ -186,14 +186,14 @@ body {
     gap: 64px;
 }
 
-.jobs__board__occupation-area {
+.jobs__board__content {
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.jobs__board__occupation-area__title {
+.jobs__board__occupation-area {
     color: var(--fourth-font-color);
     font-size: 1.25rem;
     font-weight: 600;
