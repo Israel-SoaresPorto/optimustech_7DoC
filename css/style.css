@@ -139,21 +139,21 @@ body {
     gap: 64px;
 }
 
-.talents {
+.jobs__talents {
     padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 64px;
 }
 
-.talents__content {
+.jobs__talents__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.talents__content__bagde {
+.jobs__talents__content__bagde {
     background-color: #8e242415;
     color: var(--primary-font-color);
     padding: 4px 12px;
@@ -162,18 +162,18 @@ body {
     border-radius: 10px;
 }
 
-.talents__content__title {
+.jobs__talents__content__title {
     color: var(--fourth-font-color);
     font-size: 2.3rem;
     font-weight: 600;
 }
 
-.talents__content__text {
+.jobs__talents__content__text {
     color: var(--secondary-font-color);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.talents__image {
+.jobs__talents__image {
     width: 100%;
 }
