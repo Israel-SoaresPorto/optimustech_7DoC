@@ -7,4 +7,5 @@ projeto do #7DaysOfCode da Alura
 - Dia 4: Criando seção de vagas
 - Dia 5: Criando quadro de vagas
 - Dia 6: Criando seção de depoimentos
-- Dia 7:
+- Dia 7: Criando rodapé da página
+
