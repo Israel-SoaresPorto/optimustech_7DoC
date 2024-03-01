@@ -1,311 +1,384 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-font-color: #8e2424;
-    --secondary-font-color: #667085;
-    --terciary-font-color: #3a404e;
-    --fourth-font-color: #101828;
-    --standard-line-heigth: 1.5;
+  --primary-font-color: #8e2424;
+  --secondary-font-color: #667085;
+  --terciary-font-color: #3a404e;
+  --fourth-font-color: #101828;
+  --standard-line-heigth: 1.5;
+  --large-horinzontal-padding: 7em;
+  --medium-horizontal-padding: 4em;
+  --small-horizontal-padding: 2em;
+  --button-padding: 0.7em;
 }
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .navBar {
-    padding: 1% 8%;
+    padding:1em var(--small-horizontal-padding);
 }
 
 .navBar__container {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  font-weight: 500;
+}
+
+.navBar__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navBar__logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex: 1;
+  width: 100px;
 }
 
-.navBar__logo-text {
-    font-size: 18px;
+.navBar__menu {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.navBar__menu img {
+  width: 24px;
+  height: 24px;
+}
+
+.navBar__sideMenu {
+  display: block;
+}
+
+.navBar__sideMenu img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .navBar__links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    flex: 2;
+  display: none;
+  visibility: hidden;
+  flex-grow: 1;
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+.navBar__links li {
+  padding: 0.5em 0;
 }
 
 .navBar__links a {
-    color: var(--secondary-font-color);
-    text-decoration: none;
+  color: var(--secondary-font-color);
+  text-decoration: none;
 }
 
 .navBar__actions {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: flex-end;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  gap: .5em;
 }
 
 .navBar__actions__login {
-    padding: 10px 18px;
-    color: var(--secondary-font-color);
-    text-decoration: none;
+  padding: var(--button-padding);
+  color: var(--secondary-font-color);
+  text-decoration: none;
 }
 
 .navBar__actions__sign-in {
-    background-color: var(--primary-font-color);
-    padding: 14px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
+  background-color: var(--primary-font-color);
+  padding: var(--button-padding);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .about {
-    padding: 96px 18%;
+  padding: 3em var(--small-horizontal-padding);
 }
 
 .about__content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
 }
 
 .about__subheading {
-    color: var(--primary-font-color);
-    font-weight: 600;
+  color: var(--primary-font-color);
+  font-weight: 600;
 }
 
 .about__title {
-    font-size: 3rem;
-    color: var(--fourth-font-color);
+  font-size: 3rem;
+  color: var(--fourth-font-color);
 }
 
 .about__text {
-    font-size: 1.25rem;
-    color: var(--secondary-font-color);
-    line-height: var(--standard-line-heigth);
+  font-size: 1.25rem;
+  color: var(--secondary-font-color);
+  line-height: var(--standard-line-heigth);
 }
 
 .metrics {
-    display: flex;
-    align-content: center;
-    padding: 0 8% 96px;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 var(--small-horizontal-padding) 96px;
+  gap: 20px;
 }
 
 .metrics__item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
 }
 
 .metrics__item__number {
-    font-size: 3.75rem;
-    color: var(--primary-font-color);
-    font-weight: 600;
+  font-size: 3.75rem;
+  color: var(--primary-font-color);
+  font-weight: 600;
 }
 
 .metrics__item__text {
-    color: var(--fourth-font-color);
-    font-weight: 500;
-    font-size: 1.125rem;
+  color: var(--fourth-font-color);
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 
 .metrics__item__subtext {
-    color: var(--secondary-font-color);
-    line-height: var(--standard-line-heigth);
+  color: var(--secondary-font-color);
+  line-height: var(--standard-line-heigth);
 }
 
 .jobs {
-    padding: 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+  padding: var(--small-horizontal-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
 }
 
 .jobs__talents {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .jobs__talents__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .jobs__talents__content__bagde {
-    background-color: #8e242415;
-    color: var(--primary-font-color);
-    padding: 4px 12px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    border-radius: 10px;
+  background-color: #8e242415;
+  color: var(--primary-font-color);
+  padding: 4px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 10px;
 }
 
 .jobs__talents__content__title {
-    color: var(--fourth-font-color);
-    font-size: 2.3rem;
-    font-weight: 600;
+  color: var(--fourth-font-color);
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .jobs__talents__content__text {
-    color: var(--secondary-font-color);
-    font-size: 1.3rem;
-    font-weight: 400;
+  color: var(--secondary-font-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .jobs__talents__image {
-    width: 100%;
+  width: 100%;
 }
 
 .jobs__board {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 .jobs__board__content {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .jobs__board__occupation-area {
-    color: var(--fourth-font-color);
-    font-size: 1.25rem;
-    font-weight: 600;
+  color: var(--fourth-font-color);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .jobs__board__post {
-    padding: 24px;
-    border: 1px solid #eaecf0;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  padding: 24px;
+  border: 1px solid #eaecf0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .jobs__board__post__title {
-    color: var(--fourth-font-color);
-    font-size: 1.125rem;
-    font-weight: 600;
+  color: var(--fourth-font-color);
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .jobs__board__post__details {
-    color: var(--secondary-font-color);
-    display: flex;
-    gap: 24px;
+  color: var(--secondary-font-color);
+  display: flex;
+  gap: 24px;
 }
 
 .briefs {
-    padding: 0 8% 96px;
+  padding: 0 8% 96px;
 }
 
 .briefs__container {
-    background-color: #c3191909;
-    padding: 64px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+  background-color: #c3191909;
+  padding: 64px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 .briefs__subheading {
-    color: var(--primary-font-color);
-    font-weight: 600;
+  color: var(--primary-font-color);
+  font-weight: 600;
+  text-align: center;
 }
 
 .briefs__content {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .briefs__quote {
-    font-size: 2.125rem;
-    font-weight: 500;
-    text-align: center;
+  font-size: 2.125rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .briefs__attribuition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .briefs__attribuition__name {
-    color: var(--fourth-font-color);
-    font-weight: 600;
+  color: var(--fourth-font-color);
+  font-weight: 600;
 }
 
 .briefs__attribuition__occupation {
-    color: var(--secondary-font-color);
-    font-size: 0.875rem;
+  color: var(--secondary-font-color);
+  font-size: 0.875rem;
 }
 
 .footer {
-    background-color: #f9fafb;
-    padding: 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  background-color: #f9fafb;
+  padding: 6em var(--small-horizontal-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .footer__head {
-    color: var(--fourth-font-color);
-    font-size: 2.125rem;
+  color: var(--fourth-font-color);
+  font-size: 2.125rem;
+  text-align: center;
 }
 
 .footer__subhead {
-    color: var(--secondary-font-color);
+  color: var(--secondary-font-color);
+  text-align: center;
 }
 
 .footer__form {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .footer__form__input {
-    width: 360px;
-    padding: 12px;
-    outline: none;
+  width: 12em;
+  padding: .75em;
+  outline: none;
 }
 
 .footer__form__button {
-    background-color: var(--primary-font-color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  background-color: var(--primary-font-color);
+  color: white;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .footer__text {
-    color: #98a2b3;
+  color: #98a2b3;
+  text-align: center;
+}
+
+.toogle {
+  display: block;
+  visibility: visible;
+}
+
+@media screen and (min-width: 28em) {
+  .navBar {
+    padding: 1em 4em;
+  }
+}
+
+@media screen and (min-width: 56em) {
+  .navBar {
+    padding: 1em 7em;
+  }
+
+  .navBar__links {
+    display: block;
+    visibility: visible;
+  }
+
+  .navBar__links li {
+    display: inline;
+    margin: 0 2em;
+    padding: 0;
+  }
+
+  .navBar__sideMenu {
+    display: block;
+    visibility: visible;
+  }
 }

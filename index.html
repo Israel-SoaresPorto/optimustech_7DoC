@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/media-querie.css" /> -->
     <title>OptimusTech</title>
   </head>
   <body>
     <nav class="navBar">
       <div class="navBar__container">
-        <div class="navBar__logo">
-          <img src="assets/logo.png" alt="" class="navBar__logo-image" />
-          <p class="navBar__logo-text">OptimusTech</p>
+        <div class="navBar__top">
+          <img src="assets/logo.svg" alt="" class="navBar__logo" />
+          <div class="navBar__actions">
+            <a href="#" class="navBar__actions__login">Entrar</a>
+            <a href="#" class="navBar__actions__sign-in">Cadastrar</a>
+          </div>
         </div>
-        <div class="navBar__links">
-          <a href="#">Home</a>
-          <a href="#">Produtos</a>
-          <a href="#">Recursos</a>
-          <a href="#">Sobre Nós</a>
-        </div>
-        <div class="navBar__actions">
-          <a href="#" class="navBar__actions__login">Entrar</a>
-          <a href="#" class="navBar__actions__sign-in">Cadastrar</a>
+        <div class="navBar__menu">
+          <img src="assets/logo.png">
+          <ul class="navBar__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+          </ul>
+          <div class="navBar__sideMenu">
+            <img src="assets/menu-icon.svg" alt="">
+          </div>
         </div>
       </div>
     </nav>
@@ -165,10 +171,17 @@
         Seja o primeiro a saber quando novas vagas serão abertas!
       </p>
       <div class="footer__form">
-        <input type="email" placeholder="Seu e-mail" class="footer__form__input">
+        <input
+          type="email"
+          placeholder="Seu e-mail"
+          class="footer__form__input"
+        />
         <button class="footer__form__button">Cadastrar</button>
       </div>
-      <p class="footer__text">© 2022 OptimusTech. Todos os direitos reservados.</p>
+      <p class="footer__text">
+        © 2022 OptimusTech. Todos os direitos reservados.
+      </p>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>
