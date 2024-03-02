@@ -12,9 +12,9 @@
   --terciary-font-color: #3a404e;
   --fourth-font-color: #101828;
   --standard-line-heigth: 1.5;
-  --large-horinzontal-padding: 7em;
-  --medium-horizontal-padding: 4em;
-  --small-horizontal-padding: 2em;
+  --large-horinzontal-padding: 7rem;
+  --medium-horizontal-padding: 4rem;
+  --small-horizontal-padding: 2rem;
   --button-padding: 0.7em;
 }
 
@@ -23,7 +23,8 @@ body {
 }
 
 .navBar {
-    padding:1em var(--small-horizontal-padding);
+    padding: 1rem var(--small-horizontal-padding);
+    font-size: .8em;
 }
 
 .navBar__container {
@@ -41,7 +42,7 @@ body {
 }
 
 .navBar__logo {
-  width: 100px;
+  width: 6rem;
 }
 
 .navBar__menu {
@@ -52,8 +53,8 @@ body {
 }
 
 .navBar__menu img {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .navBar__sideMenu {
@@ -61,8 +62,8 @@ body {
 }
 
 .navBar__sideMenu img {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
   cursor: pointer;
 }
 
