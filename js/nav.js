@@ -1,6 +1,6 @@
-const menu = document.querySelector(".navBar__menu");
-const sideMenu = document.querySelector(".navBar__toogleMenu img");
+const menu = document.querySelector(".navBar");
+const toogleMenu = document.querySelector(".top__toogleNavBar img");
 
-sideMenu.addEventListener('click', () => {
+toogleMenu.addEventListener('click', () => {
     menu.classList.toggle("toogle");
 })

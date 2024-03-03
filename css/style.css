@@ -16,60 +16,55 @@
   --large-horizontal-padding: 7rem;
   --medium-horizontal-padding: 4rem;
   --small-horizontal-padding: 2rem;
-  --button-padding: 0.7em;
+  --button-padding: .8em;
+  --button-bgColor-hover: color-mix(in srgb, var(--primary-font-color), white 20%);
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-.navBar {
+.btn {
+  background-color: var(--primary-font-color);
+  padding: var(--button-padding);
+  color: white;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: var(--button-bgColor-hover)
+}
+
+.top {
     padding: 1rem var(--small-horizontal-padding);
     font-size: .8em;
 }
 
-.navBar__container {
+.top__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1em;
   font-weight: 500;
+  padding-bottom: 1em;
 }
 
-.navBar__logo {
+.top__logo {
   width: 6rem;
 }
 
-.navBar__toogleMenu {
-  display: block;
-  visibility: visible;
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.navBar__toogleMenu img {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.navBar__links {
+.top__links {
   display: none;
   visibility: hidden;
-  flex-grow: 1;
   list-style-type: none;
 }
 
-.navBar__links li {
-  padding: 0.5em 0;
-}
-
-.navBar__links a {
+.top__links a {
   color: var(--secondary-font-color);
   text-decoration: none;
 }
 
-.navBar__actions {
+.top__actions {
   display: flex;
   flex: 1;
   align-items: center;
@@ -77,34 +72,50 @@ body {
   gap: .5em;
 }
 
-.navBar__actions__login {
+.top__actions__link {
   padding: var(--button-padding);
   color: var(--secondary-font-color);
   text-decoration: none;
 }
 
-.navBar__actions__sign-in {
-  background-color: var(--primary-font-color);
-  padding: var(--button-padding);
+.top__actions__link.btn{
   color: white;
-  text-decoration: none;
-  border-radius: 10px;
+}
+
+.top__toogleNavBar {
+  display: block;
+  visibility: visible;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.top__toogleNavBar img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navBar {
+  display: none;
+  visibility: hidden;
+  background-color: var(--primary-font-color);
 }
 
 .navBar__menu {
-  display: none;
-  visibility: hidden;
-  transition: all .5s ease;
-}
-
-.navBar__menu__bar {
-  padding: .5em;
+  list-style-type: none;
+  text-align: center;
 }
 
 .navBar__menu a {
-  color: var(--secondary-font-color);
+  display: block;
+  padding: .75em;
+  color: white;
   text-decoration: none;
   font-weight: 500;
+}
+
+.navBar__menu li:hover {
+  background-color: var(--button-bgColor-hover);
 }
 
 .about {
@@ -337,11 +348,7 @@ body {
 }
 
 .footer__form__button {
-  background-color: var(--primary-font-color);
-  color: white;
-  padding: var(--button-padding);
   border: none;
-  border-radius: .75em;
   cursor: pointer;
 }
 
@@ -356,7 +363,7 @@ body {
 }
 
 @media screen and (min-width: 28em) {
-  .navBar {
+  .top {
     padding: 1rem var(--medium-horizontal-padding);
     font-size: .9em;
   }
@@ -392,28 +399,25 @@ body {
 }
 
 @media screen and (min-width: 58em) {
-  .navBar {
+  .top {
     padding: 1em 7em;
     font-size: 1rem;
   }
 
-  .navBar__links {
-    display: block;
+  .top__links {
     visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1.5em;
   }
 
-  .navBar__links li {
-    display: inline;
-    margin: 0 1rem;
-    padding: 0;
-  }
-
-  .navBar__toogleMenu {
+  .top__toogleNavBar {
     display: none;
     visibility: hidden;
   }
 
-  .navBar__menu {
+  .navBar {
     display: none;
     visibility: hidden;
   }
