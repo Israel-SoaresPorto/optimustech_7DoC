@@ -24,6 +24,15 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.maxWidth {
+  margin: auto;
+  max-width: 75em;
+}
+
+.wrapper {
+  width: 100%;
+}
+
 .btn {
   background-color: var(--primary-font-color);
   padding: var(--button-padding);
