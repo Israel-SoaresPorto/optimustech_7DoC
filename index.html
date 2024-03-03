@@ -8,31 +8,33 @@
     <title>OptimusTech</title>
   </head>
   <body>
-    <nav class="navBar">
-      <div class="navBar__container">
+    <header class="top">
+      <div class="top__container">
         <img src="assets/logo.svg" alt="" class="navBar__logo" />
-        <ul class="navBar__links">
+        <div class="top__links">
+          <a href="#">Home</a>
+          <a href="#">Produtos</a>
+          <a href="#">Recursos</a>
+          <a href="#">Sobre Nós</a>
+        </div>
+        <div class="top__actions">
+          <a href="#" class="navBar__actions__login">Entrar</a>
+          <a href="#" class="navBar__actions__sign-in">Cadastrar</a>
+        </div>
+        <div class="top__toogleNavBar">
+          <img src="assets/menu-icon.svg" alt="" />
+        </div>
+      </div>
+      <nav class="navBar">
+        <ul class="navBar__menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Produtos</a></li>
           <li><a href="#">Recursos</a></li>
           <li><a href="#">Sobre Nós</a></li>
         </ul>
-        <div class="navBar__actions">
-          <a href="#" class="navBar__actions__login">Entrar</a>
-          <a href="#" class="navBar__actions__sign-in">Cadastrar</a>
-        </div>
-        <div class="navBar__toogleMenu">
-          <img src="assets/menu-icon.svg" alt="" />
-        </div>
       </div>
-      <div class="navBar__menu">
-        <div class="navBar__menu__bar"><a href="#">Home</a></div>
-        <div class="navBar__menu__bar"><a href="#">Produtos</a></div>
-        <div class="navBar__menu__bar"><a href="#">Recursos</a></div>
-        <div class="navBar__menu__bar"><a href="#">Sobre Nós</a></div>
-      </div>
-    </nav>
-    <header class="about">
+    </header>
+    <section class="about">
       <div class="about__content">
         <span class="about__subheading">Sobre nós</span>
         <h1 class="about__title">Por que somos diferentes?</h1>
@@ -42,7 +44,7 @@
           importante para elas.
         </p>
       </div>
-    </header>
+    </section>
     <section class="metrics">
       <div class="metrics__item">
         <span class="metrics__item__number">400+</span>
